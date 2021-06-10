@@ -26,7 +26,7 @@ struct LickableButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         ZStack {
-            ButtonBackground(color: isDefaultAction ? .highlighted : .default)
+            ButtonBackground(color: buttonColor)
             
             if isDefaultAction {
                 Capsule()
@@ -38,10 +38,12 @@ struct LickableButtonStyle: ButtonStyle {
             if configuration.isPressed {
                 ButtonBackground(color: .pressed)
             }
-
+            
             Capsule()
                 .stroke(LinearGradient(
-                          gradient: buttonColor.outlineGradient,
+                          gradient: configuration.isPressed ?
+                            LickableButtonColor.pressed.outlineGradient :
+                            buttonColor.outlineGradient,
                           startPoint: .top,
                           endPoint: .bottom))
 
