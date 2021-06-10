@@ -11,13 +11,7 @@ struct LickableButtonStyle: ButtonStyle {
     let isDefaultAction: Bool
     var buttonColor: LickableButtonColor
     
-    @State var buttonPulse = false {
-        didSet {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                buttonPulse = !buttonPulse
-            }
-        }
-    }
+    @State var buttonPulse = false
     
     init(isDefaultAction: Bool = false) {
         self.isDefaultAction = isDefaultAction
@@ -31,8 +25,9 @@ struct LickableButtonStyle: ButtonStyle {
             if isDefaultAction {
                 Capsule()
                     .fill(Color.white)
+                    .animation(nil)
                     .opacity(buttonPulse ? 0.2 : 0)
-                    .animation(.easeInOut(duration: 0.5))
+                    .animation(.easeInOut(duration: 0.5).repeatForever())
             }
             
             if configuration.isPressed {
