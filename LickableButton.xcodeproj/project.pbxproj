@@ -11,6 +11,9 @@
 		43D745B0267146310091E074 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D745AF267146310091E074 /* ContentView.swift */; };
 		43D745B2267146330091E074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D745B1267146330091E074 /* Assets.xcassets */; };
 		43D745B5267146330091E074 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D745B4267146330091E074 /* Preview Assets.xcassets */; };
+		43D745C0267146680091E074 /* LickableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D745BF267146680091E074 /* LickableButtonStyle.swift */; };
+		43D745C42671777D0091E074 /* LickableButtonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D745C32671777D0091E074 /* LickableButtonColor.swift */; };
+		43D745C62671F5500091E074 /* ButtonBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D745C52671F5500091E074 /* ButtonBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		43D745B4267146330091E074 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43D745B6267146330091E074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43D745B7267146330091E074 /* LickableButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LickableButton.entitlements; sourceTree = "<group>"; };
+		43D745BF267146680091E074 /* LickableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LickableButtonStyle.swift; sourceTree = "<group>"; };
+		43D745C32671777D0091E074 /* LickableButtonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LickableButtonColor.swift; sourceTree = "<group>"; };
+		43D745C52671F5500091E074 /* ButtonBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 			children = (
 				43D745AD267146310091E074 /* LickableButtonApp.swift */,
 				43D745AF267146310091E074 /* ContentView.swift */,
+				43D745BF267146680091E074 /* LickableButtonStyle.swift */,
+				43D745C52671F5500091E074 /* ButtonBackground.swift */,
+				43D745C32671777D0091E074 /* LickableButtonColor.swift */,
 				43D745B1267146330091E074 /* Assets.xcassets */,
 				43D745B6267146330091E074 /* Info.plist */,
 				43D745B7267146330091E074 /* LickableButton.entitlements */,
@@ -142,6 +151,9 @@
 			files = (
 				43D745B0267146310091E074 /* ContentView.swift in Sources */,
 				43D745AE267146310091E074 /* LickableButtonApp.swift in Sources */,
+				43D745C62671F5500091E074 /* ButtonBackground.swift in Sources */,
+				43D745C0267146680091E074 /* LickableButtonStyle.swift in Sources */,
+				43D745C42671777D0091E074 /* LickableButtonColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
